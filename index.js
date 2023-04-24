@@ -42,6 +42,8 @@ let score = 0;
 let highestScore = localStorage.getItem("paHighScore") || 0;
 let isPlaying = false;
 
+let canvasBound = canvas.getBoundingClientRect()
+console.log(canvasBound)
 const keys = {
   a: {
     pressed: false,
