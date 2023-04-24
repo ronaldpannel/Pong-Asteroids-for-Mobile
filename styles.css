@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.canvas1 {
+  background-image: url("spaceBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 800px;
+  border: 1px solid white;
+  max-width: 100%;
+  max-height: 100%;
+}
+.startScreen {
+  width: 600px;
+  height: 800px;
+  background-color: purple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  z-index: 100;
+}
+.gameOverScreen{
+   width: 600px;
+  height: 800px;
+  background-color: purple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: wheat;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  z-index: 20;
+}
+p {
+  font-size: 25px;
+}
+.btnContainer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+button {
+  width: 220px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid wheat;
+  background-color: blueviolet;
+  color: rgb(209, 157, 61);
+  border: 1px solid wheat;
+  box-shadow: 3px 3px 2px black;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid blueviolet;
+  box-shadow:inset 3px 3px 2px black;
+}
+.cloud{
+  position: absolute;
+  top: 50%;
+  width: 210px;
+  height: 210px;
+  display: none;
+  border-radius: 50%;
+  background: transparent url('boom.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  animation: cloud 1s steps(5) infinite;
+}
+@keyframes cloud {
+  100%{
+    background-position: -1000px, 0 ;
+  }
+}
+
+.asteroidImage {
+  display: none;
+}
+.explosionImage {
+  display: none;
+}
+.ballImage {
+  display: none;
+}
+.inactive{
+  display: none;
+}
+.active{
+  display: flex;
+}
+.cloudActive{
+  display: block;
+}
