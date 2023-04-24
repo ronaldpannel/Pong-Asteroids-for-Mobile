@@ -78,7 +78,6 @@ function scoreBoard(context) {
   context.font = "25px Aerial";
   context.strokeText("Highest Score: " + highestScore, 400, 30);
   ctx.fillText("Highest Score: " + highestScore, 400, 30);
-
   gameOverScreenScore.innerHTML = score;
   gameOverScreenHiSore.innerHTML = highestScore;
 }
@@ -96,7 +95,6 @@ function gameEndConditions(context) {
     stopGame();
   }
 }
-
 function animate() {
   if (!isPlaying) {
     return;
@@ -184,7 +182,7 @@ window.addEventListener("keyup", (e) => {
     keys.d.pressed = false;
   }
 });
-document.addEventListener("pointermove", (e) => {
+canvas.addEventListener("pointermove", (e) => {
   e.preventDefault();
   paddle.mousePos = e.offsetX;
 });

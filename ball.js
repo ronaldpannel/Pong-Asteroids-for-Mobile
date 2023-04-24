@@ -67,9 +67,9 @@ export default class Ball {
     if (this.y < 0 + this.r) {
       this.velY = this.velY * -1;
     }
-    // if (this.y + this.r > this.height) {
-    //   this.x = this.width / 2;
-    //   this.y = this.height / 2;
-    // }
+    if (this.y + this.r > this.height) {
+      this.x = this.width / 2;
+      this.y = this.height / 2;
+    }
   }
 }

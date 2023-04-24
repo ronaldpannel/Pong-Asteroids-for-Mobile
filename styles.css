@@ -6,6 +6,7 @@
 body {
   background-color: black;
   overflow: hidden;
+  touch-action: none;
 }
 
 .canvas1 {
@@ -38,6 +39,7 @@ body {
   justify-content: space-evenly;
   text-align: center;
   z-index: 100;
+  touch-action: none;
 }
 .gameOverScreen{
    width: 600px;
@@ -54,6 +56,7 @@ body {
   justify-content: space-evenly;
   text-align: center;
   z-index: 20;
+  touch-action: none;
 }
 p {
   font-size: 25px;
