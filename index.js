@@ -42,8 +42,8 @@ let score = 0;
 let highestScore = localStorage.getItem("paHighScore") || 0;
 let isPlaying = false;
 
-let canvasBound = canvas.getBoundingClientRect()
-console.log(canvasBound)
+let canvasBound = canvas.getBoundingClientRect();
+console.log(canvasBound);
 const keys = {
   a: {
     pressed: false,
@@ -78,8 +78,8 @@ function scoreBoard(context) {
   context.fillText("Score: " + score, 30, 30);
   context.fillStyle = "white";
   context.font = "25px Aerial";
-  context.strokeText("Highest Score: " + highestScore, 400, 30);
-  ctx.fillText("Highest Score: " + highestScore, 400, 30);
+  context.strokeText("Highest Score: " + highestScore, 200, 30);
+  ctx.fillText("Highest Score: " + highestScore, 200, 30);
   gameOverScreenScore.innerHTML = score;
   gameOverScreenHiSore.innerHTML = highestScore;
 }
