@@ -4,7 +4,7 @@ export default class Paddle {
     this.height = height;
 
     this.w = 100;
-    this.h = 20;
+    this.h = 40;
     this.x = width / 2;
     this.y = height - 24;
     this.vel = 0;
